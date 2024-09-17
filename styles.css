@@ -1,0 +1,199 @@
+/* General Body Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(120deg, #f0f4f8, #e0eafc);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Container Styling */
+  .resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .resume-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Profile Picture Styling */
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #5cbcab;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  .profile-picture:hover {
+    border-color: #3ca086;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Section Title Styling */
+  h2 {
+    text-transform: uppercase;
+    border-bottom: 3px solid #5cbcab;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #5cbcab;
+    letter-spacing: 2px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  h2:hover {
+    color: #3ca086;
+    border-color: #3ca086;
+  }
+  h4 {
+    text-transform: uppercase;
+    font-size: 1.5em; /* Default size for responsive design */
+    color: #34495e;
+    transition: color 0.3s ease;
+  }
+  h4:hover {
+    color: #2c3e50;
+  }
+  
+  /* Personal Information Styling */
+  .personal-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .personal-info a {
+    color: #5cbcab;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .personal-info a:hover {
+    color: #3ca086;
+    text-decoration: underline;
+  }
+  .personal-info h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  .personal-info h1:hover {
+    color: #34495e;
+  }
+  
+  .personal-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #7f8c8d;
+  }
+  .personal-info p a {
+    color: #5cbcab;
+    text-decoration: none;
+  }
+  .personal-info p a:hover {
+    color: #3ca086;
+    text-decoration: underline;
+  }
+  
+  /* Education Section Styling */
+  .education-item {
+    margin-bottom: 20px;
+  }
+  .education-item h4 {
+    margin: 5px 0;
+  }
+  .education-item p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+  }
+  
+  /* Skills Section Styling */
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skills li {
+    background: linear-gradient(135deg, #5cbcab, #1abc9c);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin: 5px;
+    font-size: 1em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  .skills li:hover {
+    background: linear-gradient(135deg, #3ca086, #16a085);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Work Experience Section Styling */
+  .work-item {
+    margin-bottom: 20px;
+  }
+  .work-item h4 {
+    margin-bottom: 5px;
+  }
+  .work-item p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+  }
+  
+  /* Button Styling */
+  .toggle-btn {
+    background-color: #5cbcab;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 10px auto 20px;
+  }
+  .toggle-btn:hover {
+    background-color: #3ca086;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume-container {
+      padding: 20px;
+    }
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+    }
+    .personal-info h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.6em;
+    }
+    h4 {
+      font-size: 1.1em; /* Adjusted for smaller screens */
+    }
+    .education-item h4,
+    .work-item h4 {
+      font-size: 1.3em;
+    }
+    .skills li {
+      font-size: 0.9em;
+      padding: 8px 12px;
+    }
+  }
